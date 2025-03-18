@@ -16,4 +16,12 @@ struct Boxer {
     var powerPoints: Int
     var endurance: Int
     var hitRate: Int
+    
+    func description() {
+        print("\(firstName) \(lastName) (\(age))")
+    }
+    
+    mutating func birthday() {
+        age += 1
+    }
 }

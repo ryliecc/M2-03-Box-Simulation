@@ -40,3 +40,25 @@ struct Boxer {
         endurance += 15
     }
 }
+
+var boxer1 = Boxer(
+    firstName: "Henry",
+    lastName: "Hiddleston",
+    age: 29,
+    nationality: "United Kingdom",
+    resiliencePoints: 64,
+    powerPoints: 14,
+    endurance: 25,
+    hitRate: 20
+)
+
+var boxer2 = Boxer(
+    firstName: "Axel",
+    lastName: "Schweiss",
+    age: 32,
+    nationality: "Austria",
+    resiliencePoints: 52,
+    powerPoints: 18,
+    endurance: 13,
+    hitRate: 17
+)

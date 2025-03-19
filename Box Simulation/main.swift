@@ -38,6 +38,23 @@ var boxingRing2 = BoxingRing(
 
 print("Guten Tag zum heutigen Kampf im \(boxingRing1.name), wo \(boxer1.firstName + " " + boxer1.lastName) gegen \(boxer2.firstName + " " + boxer2.lastName) antritt.")
 
+// Aufgabe 1.4 Favorit bestimmen
+
+func chooseFavorite(_ boxer1: Boxer,_ boxer2: Boxer) {
+    let allPointsBoxer1: Int = boxer1.resiliencePoints + boxer1.powerPoints + boxer1.endurance + boxer1.hitRate
+    let allPointsBoxer2: Int = boxer2.resiliencePoints + boxer2.powerPoints + boxer2.endurance + boxer2.hitRate
+    
+    if allPointsBoxer1 > allPointsBoxer2 {
+        print("Der Favorit des heutigen Abends ist \(boxer1.firstName + " " + boxer1.lastName).")
+    } else if allPointsBoxer1 < allPointsBoxer2 {
+        print("Der Favorit des heutigen Abends ist \(boxer2.firstName + " " + boxer2.lastName).")
+    } else {
+        print("Heute Abend gibt es keinen Favoriten. Es wird ein besonders spannender Kampf werden.")
+    }
+}
+
+chooseFavorite(boxer1, boxer2)
+
 // Aufgabe 2.3 Methoden testen
 
 boxer1.description()

@@ -1,7 +1,5 @@
 import Foundation
 
-// Aufgabe 2.3 Methoden testen
-
 var boxer1 = Boxer(
     firstName: "Henry",
     lastName: "Hiddleston",
@@ -24,6 +22,13 @@ var boxer2 = Boxer(
     hitRate: 17
 )
 
+var boxingRing1 = BoxingRing(
+    name: "Fight Club",
+    country: "USA",
+    numberViewers: 20,
+    isOutdoor: true)
+
+// Aufgabe 2.3 Methoden testen
 
 boxer1.description()
 boxer2.description()
@@ -36,3 +41,9 @@ boxer1.training()
 boxer2.training()
 boxer2.regeneration()
 boxer2.training()
+
+
+
+// Aufgabe 3.1 Kampfrunden
+
+boxingRing1.printRounds()

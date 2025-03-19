@@ -14,4 +14,23 @@ struct BoxingRing {
     var country: String
     var numberViewers: Int
     var isOutdoor: Bool
+    
+    // Aufgabe 3.1 Kampfrunden
+    
+    let roundNumber: Int = Int.random(in: 1...4)
+    
+    func printRounds() {
+        switch roundNumber {
+        case 1:
+            print("Der Kampf ist heute nach einer Runde vorbei!")
+        case 2:
+            print("Heute geht der Kampf zwei Runden!")
+        case 3:
+            print("Der Kampf geht heute drei Runden!")
+        case 4:
+            print("Insgesamt geht der Kampf heute vier Runden!")
+        default:
+            break
+        }
+    }
 }

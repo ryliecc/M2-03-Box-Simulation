@@ -1,5 +1,7 @@
 import Foundation
 
+// Aufgabe 1.3 Instanzen erzeugen
+
 var boxer1 = Boxer(
     firstName: "Henry",
     lastName: "Hiddleston",
@@ -27,6 +29,14 @@ var boxingRing1 = BoxingRing(
     country: "USA",
     numberViewers: 20,
     isOutdoor: true)
+
+var boxingRing2 = BoxingRing(
+    name: "Super Smash Bros",
+    country: "Japan",
+    numberViewers: 42,
+    isOutdoor: false)
+
+print("Guten Tag zum heutigen Kampf im \(boxingRing1.name), wo \(boxer1.firstName + " " + boxer1.lastName) gegen \(boxer2.firstName + " " + boxer2.lastName) antritt.")
 
 // Aufgabe 2.3 Methoden testen
 

@@ -7,6 +7,8 @@
 
 import Foundation
 
+// Aufgabe 1.2 Box-Ring modellieren
+
 struct BoxingRing {
     var name: String
     var country: String

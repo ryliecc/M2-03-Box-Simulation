@@ -13,7 +13,12 @@ struct BoxingRing {
     var name: String
     var country: String
     var numberViewers: Int
-    var isOutdoor: Bool
+
+    // Aufgabe 2.5 Boxer und Boxring verbinden
+    
+    var boxer1: Boxer
+    
+    let boxer2: Boxer
     
     // Aufgabe 3.1 Kampfrunden
     
@@ -33,7 +38,7 @@ struct BoxingRing {
             break
         }
     }
-    
+
     // Aufgabe 3.2 Wetterbedingungen
     
     let weather = Weather.allCases.randomElement()
@@ -50,23 +55,14 @@ struct BoxingRing {
             break
         }
     }
-    
-    // Aufgabe 2.5 Boxer und Boxring verbinden
-    
-    var boxer1: Boxer
-    
-    let boxer2: Boxer
-}
-
-// Aufgabe 2.6 Boxer austauschen
-
-func exchangeBoxer(boxingRing: BoxingRing, newBoxer: Boxer) -> BoxingRing {
-    var copy = boxingRing
-    copy.boxer1 = newBoxer
-    return copy
-}
-
-// Bonusaufgabe:
-//  mutating func exchangeBoxer(newBoxer: Boxer) {
-//      boxer1 = newBoxer
-//  }
+    // Aufgabe 3.3 Location Enum statt Outdoor Bool
+        var location: Location
+        
+        mutating func changeLocationRandomly() {
+            var newLocation: Location = Location.allCases.randomElement()!
+            while newLocation == location {
+                newLocation = Location.allCases.randomElement()!
+            }
+            location = newLocation
+        }
+    }

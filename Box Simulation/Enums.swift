@@ -14,3 +14,11 @@ enum Weather: CaseIterable {
     case rainy
     case cloudy
 }
+
+// Aufgabe 3.3 Location Enum statt Outdoor Bool
+
+enum Location: String, CaseIterable {
+    case hall = "Dieser Ring befindet sich in einer kleinen, engen Halle. Die Atmosphäre hier ist schnell aufgeheizt!"
+    case gym = "Dieser Ring befindet sich in einem Fitnessstudio im Stadtzentrum."
+    case outdoorArea = "Dieser Ring befindet sich draußen auf einem leeren Parkplatz."
+}

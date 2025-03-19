@@ -28,17 +28,17 @@ var boxingRing1 = BoxingRing(
     name: "Fight Club",
     country: "USA",
     numberViewers: 20,
-    isOutdoor: true,
     boxer1: boxer1,
-    boxer2: boxer2)
+    boxer2: boxer2,
+    location: Location.allCases.randomElement()!)
 
 var boxingRing2 = BoxingRing(
     name: "Super Smash Bros",
     country: "Japan",
     numberViewers: 42,
-    isOutdoor: false,
     boxer1: boxer1,
-    boxer2: boxer2)
+    boxer2: boxer2,
+    location: Location.allCases.randomElement()!)
 
 print("Guten Tag zum heutigen Kampf im \(boxingRing1.name), wo \(boxer1.firstName + " " + boxer1.lastName) gegen \(boxer2.firstName + " " + boxer2.lastName) antritt.")
 
@@ -77,6 +77,20 @@ boxer2.training()
 
 print("Die zugeteilten Boxer für \(boxingRing1.name) sind \(boxingRing1.boxer1.firstName + " " + boxingRing1.boxer1.lastName) und \(boxingRing1.boxer2.firstName + " " + boxingRing1.boxer2.lastName).")
 
+// Aufgabe 2.6 Boxer austauschen
+
+func exchangeBoxer(boxingRing: BoxingRing, newBoxer: Boxer) -> BoxingRing {
+    var copy = boxingRing
+    copy.boxer1 = newBoxer
+    return copy
+}
+
+// Bonusaufgabe:
+//  mutating func exchangeBoxer(newBoxer: Boxer) {
+//      boxer1 = newBoxer
+//  }
+
+
 // Aufgabe 3.1 Kampfrunden
 
 boxingRing1.printRounds()
@@ -84,3 +98,7 @@ boxingRing1.printRounds()
 // Aufgabe 3.2 Wetterbedingungen
 
 boxingRing1.weatherOutlook()
+
+// Aufgabe 3.3 Location Enum statt Outdoor Bool
+
+print(boxingRing1.location.rawValue)

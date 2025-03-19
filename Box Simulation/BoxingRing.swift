@@ -50,4 +50,10 @@ struct BoxingRing {
             break
         }
     }
+    
+    // Aufgabe 2.5 Boxer und Boxring verbinden
+    
+    let boxer1: Boxer
+    
+    let boxer2: Boxer
 }

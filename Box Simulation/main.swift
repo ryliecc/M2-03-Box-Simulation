@@ -28,13 +28,17 @@ var boxingRing1 = BoxingRing(
     name: "Fight Club",
     country: "USA",
     numberViewers: 20,
-    isOutdoor: true)
+    isOutdoor: true,
+    boxer1: boxer1,
+    boxer2: boxer2)
 
 var boxingRing2 = BoxingRing(
     name: "Super Smash Bros",
     country: "Japan",
     numberViewers: 42,
-    isOutdoor: false)
+    isOutdoor: false,
+    boxer1: boxer1,
+    boxer2: boxer2)
 
 print("Guten Tag zum heutigen Kampf im \(boxingRing1.name), wo \(boxer1.firstName + " " + boxer1.lastName) gegen \(boxer2.firstName + " " + boxer2.lastName) antritt.")
 
@@ -69,7 +73,9 @@ boxer2.training()
 boxer2.regeneration()
 boxer2.training()
 
+// Aufgabe 2.5 Boxer und Boxring verbinden
 
+print("Die zugeteilten Boxer für \(boxingRing1.name) sind \(boxingRing1.boxer1.firstName + " " + boxingRing1.boxer1.lastName) und \(boxingRing1.boxer2.firstName + " " + boxingRing1.boxer2.lastName).")
 
 // Aufgabe 3.1 Kampfrunden
 

@@ -33,4 +33,21 @@ struct BoxingRing {
             break
         }
     }
+    
+    // Aufgabe 3.2 Wetterbedingungen
+    
+    let weather = Weather.allCases.randomElement()
+    
+    func weatherOutlook() {
+        switch weather {
+        case .sunny:
+            print("Das Wetter heute ist schön sonnig!")
+        case .rainy:
+            print("Das Wetter ist heute regnerisch!")
+        case .cloudy:
+            print("Der Himmel ist heute bedeckt!")
+        default:
+            break
+        }
+    }
 }

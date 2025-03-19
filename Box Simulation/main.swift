@@ -57,3 +57,7 @@ boxer2.training()
 // Aufgabe 3.1 Kampfrunden
 
 boxingRing1.printRounds()
+
+// Aufgabe 3.2 Wetterbedingungen
+
+boxingRing1.weatherOutlook()

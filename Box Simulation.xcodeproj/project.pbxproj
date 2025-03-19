@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7ACD2C572D8868AD003107C2 /* Boxer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD2C562D8868AD003107C2 /* Boxer.swift */; };
 		7ACD2C592D899039003107C2 /* BoxingRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD2C582D899039003107C2 /* BoxingRing.swift */; };
+		7ACD2C5B2D8B00CE003107C2 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD2C5A2D8B00CE003107C2 /* Enums.swift */; };
 		CE75F1B62C8B122D001AD0A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75F1B52C8B122D001AD0A3 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		7ACD2C562D8868AD003107C2 /* Boxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boxer.swift; sourceTree = "<group>"; };
 		7ACD2C582D899039003107C2 /* BoxingRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxingRing.swift; sourceTree = "<group>"; };
+		7ACD2C5A2D8B00CE003107C2 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		CE75F1B22C8B122D001AD0A3 /* Box Simulation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Box Simulation"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE75F1B52C8B122D001AD0A3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 				CE75F1B52C8B122D001AD0A3 /* main.swift */,
 				7ACD2C562D8868AD003107C2 /* Boxer.swift */,
 				7ACD2C582D899039003107C2 /* BoxingRing.swift */,
+				7ACD2C5A2D8B00CE003107C2 /* Enums.swift */,
 			);
 			path = "Box Simulation";
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			files = (
 				7ACD2C572D8868AD003107C2 /* Boxer.swift in Sources */,
 				CE75F1B62C8B122D001AD0A3 /* main.swift in Sources */,
+				7ACD2C5B2D8B00CE003107C2 /* Enums.swift in Sources */,
 				7ACD2C592D899039003107C2 /* BoxingRing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

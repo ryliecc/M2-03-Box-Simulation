@@ -53,7 +53,20 @@ struct BoxingRing {
     
     // Aufgabe 2.5 Boxer und Boxring verbinden
     
-    let boxer1: Boxer
+    var boxer1: Boxer
     
     let boxer2: Boxer
 }
+
+// Aufgabe 2.6 Boxer austauschen
+
+func exchangeBoxer(boxingRing: BoxingRing, newBoxer: Boxer) -> BoxingRing {
+    var copy = boxingRing
+    copy.boxer1 = newBoxer
+    return copy
+}
+
+// Bonusaufgabe:
+//  mutating func exchangeBoxer(newBoxer: Boxer) {
+//      boxer1 = newBoxer
+//  }

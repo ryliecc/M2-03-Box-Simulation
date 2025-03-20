@@ -7,10 +7,10 @@ var boxer1 = Boxer(
     lastName: "Hiddleston",
     age: 29,
     nationality: "United Kingdom",
-    resiliencePoints: 64,
+    resiliencePoints: 24,
     powerPoints: 14,
     endurance: 25,
-    hitRate: 20
+    hitRate: 16
 )
 
 var boxer2 = Boxer(
@@ -18,7 +18,7 @@ var boxer2 = Boxer(
     lastName: "Schweiss",
     age: 32,
     nationality: "Austria",
-    resiliencePoints: 52,
+    resiliencePoints: 12,
     powerPoints: 18,
     endurance: 13,
     hitRate: 17
@@ -120,3 +120,7 @@ boxer1.showWeakness()
 // Aufgabe 4.2 Gesamtanzahl Champions
 
 print("Die Gesamtanzahl der Boxer ist \(Boxer.numberOfBoxers).")
+
+// Aufgabe 4.3 Boxkampf
+
+boxingRing1.fight()

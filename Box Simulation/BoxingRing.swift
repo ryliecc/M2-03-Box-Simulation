@@ -18,7 +18,7 @@ struct BoxingRing {
     
     var boxer1: Boxer
     
-    let boxer2: Boxer
+    var boxer2: Boxer
     
     // Aufgabe 3.1 Kampfrunden
     
@@ -65,4 +65,36 @@ struct BoxingRing {
             }
             location = newLocation
         }
+    
+    // Aufgabe 4.3 Boxkampf
+    
+    mutating func fight() {
+        print("Der Kampf zwischen \(boxer1.firstName + " " + boxer1.lastName) und \(boxer2.firstName + " " + boxer2.lastName) hat begonnen.")
+        while boxer1.endurance > 0 && boxer2.endurance > 0 {
+            if boxer1.powerPoints <= 0 {
+                print("\(boxer2.firstName + " " + boxer2.lastName) hat den Kampf gewonnen.")
+                break
+            }
+            if boxer2.powerPoints <= 0 {
+                print("\(boxer1.firstName + " " + boxer1.lastName) hat den Kampf gewonnen.")
+                break
+            }
+            let boxer1IsFirst = Bool.random()
+            if boxer1IsFirst {
+                print("\(boxer1.firstName + " " + boxer1.lastName) schlägt zu.")
+                boxer1.hitEnemy(from: boxer2)
+                boxer2.takeHit(from: boxer1)
+            } else {
+                print("\(boxer2.firstName + " " + boxer2.lastName) schlägt zu.")
+                boxer2.hitEnemy(from: boxer1)
+                boxer1.takeHit(from: boxer2)
+            }
+        }
+        if boxer1.endurance <= 0 {
+            print("\(boxer1.firstName + " " + boxer1.lastName) hat keine Energie mehr und gibt auf.")
+        }
+        if boxer2.endurance <= 0 {
+            print("\(boxer2.firstName + " " + boxer2.lastName) hat keine Energie mehr und gibt auf.")
+        }
+    }
     }

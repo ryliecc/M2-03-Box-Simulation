@@ -100,4 +100,24 @@ struct Boxer {
     // Aufgabe 4.2 Gesamtzahl Champions
     
     static var numberOfBoxers: Int = 0
+    
+    // Aufgabe 4.3 Boxkampf
+    
+    mutating func takeHit(from attacker: Boxer) {
+        let isAttackerStrong: Bool = attacker.hitRate > self.resiliencePoints
+        if isAttackerStrong {
+            self.powerPoints -= 8
+        } else {
+            self.powerPoints -= 3
+        }
+    }
+    
+    mutating func hitEnemy(from enemy: Boxer) {
+        let isEnemyStrong: Bool = self.hitRate < enemy.resiliencePoints
+        if isEnemyStrong {
+            self.endurance -= 6
+        } else {
+            self.endurance -= 2
+        }
+    }
 }

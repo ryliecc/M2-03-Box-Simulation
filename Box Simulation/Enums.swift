@@ -22,3 +22,11 @@ enum Location: String, CaseIterable {
     case gym = "Dieser Ring befindet sich in einem Fitnessstudio im Stadtzentrum."
     case outdoorArea = "Dieser Ring befindet sich draußen auf einem leeren Parkplatz."
 }
+
+// Aufgabe 4.1 Schwäche des Boxers
+
+enum Weakness: String, CaseIterable {
+    case leftHit = "Linker Schlag"
+    case rightHit = "Rechter Schlag"
+    case balance = "Balance"
+}

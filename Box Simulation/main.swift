@@ -102,3 +102,7 @@ boxingRing1.weatherOutlook()
 // Aufgabe 3.3 Location Enum statt Outdoor Bool
 
 print(boxingRing1.location.rawValue)
+
+// Aufgabe 4.1 Schwäche des Boxers
+
+boxer1.showWeakness()

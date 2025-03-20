@@ -75,4 +75,24 @@ struct Boxer {
     mutating func regeneration() {
         endurance += 15
     }
+    
+    // Aufgabe 4.1 Schwäche des Boxers
+    private let weakness: Weakness
+    
+    init(firstName: String, lastName: String, age: Int, nationality: String, resiliencePoints: Int, powerPoints: Int, endurance: Int, hitRate: Int) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.age = age
+        self.nationality = nationality
+        self.resiliencePoints = resiliencePoints
+        self.powerPoints = powerPoints
+        self.endurance = endurance
+        self.hitRate = hitRate
+        self.weakness = Weakness.allCases.randomElement()!
+    }
+    
+    func showWeakness() {
+        let copy: Weakness = weakness
+        print("Die Schwäche des Boxers \(firstName + " " + lastName) ist: \(copy.rawValue).")
+    }
 }

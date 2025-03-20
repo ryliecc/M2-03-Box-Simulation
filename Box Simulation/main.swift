@@ -24,6 +24,16 @@ var boxer2 = Boxer(
     hitRate: 17
 )
 
+var boxer3 = Boxer(
+    firstName: "Tyler",
+    lastName: "Durden",
+    age: 34,
+    nationality: "USA",
+    resiliencePoints: 78,
+    powerPoints: 24,
+    endurance: 26,
+    hitRate: 23)
+
 var boxingRing1 = BoxingRing(
     name: "Fight Club",
     country: "USA",
@@ -106,3 +116,7 @@ print(boxingRing1.location.rawValue)
 // Aufgabe 4.1 Schwäche des Boxers
 
 boxer1.showWeakness()
+
+// Aufgabe 4.2 Gesamtanzahl Champions
+
+print("Die Gesamtanzahl der Boxer ist \(Boxer.numberOfBoxers).")

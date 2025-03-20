@@ -89,10 +89,15 @@ struct Boxer {
         self.endurance = endurance
         self.hitRate = hitRate
         self.weakness = Weakness.allCases.randomElement()!
+        Boxer.numberOfBoxers += 1
     }
     
     func showWeakness() {
         let copy: Weakness = weakness
         print("Die Schwäche des Boxers \(firstName + " " + lastName) ist: \(copy.rawValue).")
     }
+    
+    // Aufgabe 4.2 Gesamtzahl Champions
+    
+    static var numberOfBoxers: Int = 0
 }
